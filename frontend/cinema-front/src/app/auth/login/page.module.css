@@ -1,0 +1,112 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #121214;
+  }
+  
+  .card {
+    background-color: #f6c116;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 48px;
+  }
+
+
+  .card h2 {
+    /* margin-bottom: 50px; */
+    font-family: ultra-condensed 1.2em "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  .formGroup {
+    margin-bottom: 16px;
+  }
+  
+  .formGroup label {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-size: 45px;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .inputClass {
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  .error {
+    color: red;
+    font-size: 25px;
+    font-family: ultra-condensed 1.2em "IBM Plex Mono", monospace;
+    margin-bottom: 16px;
+  }
+  
+  .redBtn {
+    color: #f5f5f0;
+    font-size: 20px;
+    background: #121214;
+    border: 3px solid #121214;
+    height: 60px;
+    width: 350px;
+    border-radius: 20px;
+    margin: 16px;
+    margin-right: 54px;
+    margin-left: 54px;
+    padding: 16px 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.redBtn:hover {
+    color: #f5f5f0;
+    background: #c92a27;
+    border: 3px solid #121214;
+    box-shadow: 0 6px 8px 0 rgba(0,117,187,0.24), 0 8px 25px 0 rgba(0,117,187,0.19);
+}
+
+.blueBtn {
+    color: #f5f5f0;
+    font-size: 20px;
+    background: #121214;
+    border: 3px solid #121214;
+    height: 60px;
+    width: 350px;
+    border-radius: 20px;
+    margin: 16px;
+    margin-right: 54px;
+    margin-left: 54px;
+    padding: 16px 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.blueBtn:hover {
+    color: #f5f5f0;
+    background: #0075BB;
+    border: 3px solid #121214;
+    box-shadow: 0 6px 8px 0 rgba(201,42,39,0.24), 0 8px 25px 0 rgba(201,42,39,0.19);
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px; /* Добавил отступ сверху */
+}

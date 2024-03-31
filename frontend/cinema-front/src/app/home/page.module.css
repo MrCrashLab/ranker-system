@@ -1,0 +1,197 @@
+.homeHeader {
+    background: #121214;
+    height: 91px;
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.backImg {
+    background-image: url("../../../public/home_back.svg");
+    margin-top: 25px;
+    min-height: 910px;
+    max-height: 910px;
+    text-align: center;
+    display: flex; /* Добавил эту строку */
+    justify-content: center; /* Добавил эту строку */
+}
+
+.centerTextContainer { /* Добавил новый класс */
+    margin-top: 300px; /* Отступ сверху теперь применяется к этому классу */
+}
+
+.backGrad{
+    background-image: linear-gradient(#121214, #f6c116);
+    min-height: 910px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo {
+    color: #f5f5f0;
+    font-family: ultra-condensed 1.2em "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-size: 30px;
+    font-style: italic;
+    display: flex;
+    float: left;
+    margin: 32px;
+    margin-left: 54px;
+    /* text-align: center; */
+}
+
+.myBtn {
+    color: #121214;
+    font-size: 20px;
+    background: #f5f5f0;
+    border: 3px solid #121214;
+    height: 60px;
+    width: 190px;
+    border-radius: 20px;
+    margin: 16px;
+    margin-right: 54px;
+    float: right;
+    padding: 16px 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.myBtn:hover {
+    color: #f5f5f0;
+    background: #121214;
+    border: 3px solid #f5f5f0;
+    box-shadow: 0 6px 8px 0 rgba(255,255,255,0.24), 0 8px 25px 0 rgba(255,255,255,0.19);
+}
+
+
+.redBtn {
+    color: #f5f5f0;
+    font-size: 20px;
+    background: #121214;
+    border: 3px solid #121214;
+    height: 60px;
+    width: 350px;
+    border-radius: 20px;
+    margin: 16px;
+    margin-right: 54px;
+    margin-left: 54px;
+    padding: 16px 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.redBtn:hover {
+    color: #f5f5f0;
+    background: #c92a27;
+    border: 3px solid #121214;
+    box-shadow: 0 6px 8px 0 rgba(0,117,187,0.24), 0 8px 25px 0 rgba(0,117,187,0.19);
+}
+
+.blueBtn {
+    color: #f5f5f0;
+    font-size: 20px;
+    background: #121214;
+    border: 3px solid #121214;
+    height: 60px;
+    width: 350px;
+    border-radius: 20px;
+    margin: 16px;
+    margin-right: 54px;
+    margin-left: 54px;
+    padding: 16px 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.blueBtn:hover {
+    color: #f5f5f0;
+    background: #0075BB;
+    border: 3px solid #121214;
+    box-shadow: 0 6px 8px 0 rgba(201,42,39,0.24), 0 8px 25px 0 rgba(201,42,39,0.19);
+}
+
+.centerText{
+    color: #f5f5f0;
+    font-family: ultra-condensed 1.2em "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-size: 50px;
+    margin-left: 54px;
+    margin-right: 54px;
+    font-style: bold italic;
+    text-transform: uppercase;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 3 колонки */
+    grid-gap: 10px; /* Отступ между карточками */
+    margin-left: 54px;
+    margin-right: 54px;
+  }
+  
+  .card {
+    aspect-ratio: 2 / 3; /* Соотношение сторон 2:3 (вертикальный постер) */
+    object-fit: cover; /* Масштабирование изображения без искажений */
+    border-radius: 10px; /* Скругление углов карточки */
+    overflow: hidden; /* Обрезаем изображение, если оно не помещается */
+    border: 5px solid #f5f5f0;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .btnContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .textContainer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .text {
+    color: #121214;
+    font-family: 1.2em "IBM Plex Mono", monospace;
+    font-size: 48px;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  .textWhite {
+    color: #f5f5f0;
+    font-family: 1.2em "IBM Plex Mono", monospace;
+    font-size: 48px;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  .subText {
+    color: #f5f5f0;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none;
+  }
