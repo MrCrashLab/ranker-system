@@ -1,0 +1,14 @@
+.actorContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .actorImage {
+    max-width: 300px;
+    max-height: 450px;
+    margin-right: 20px;
+  }
+  
+  .actorInfo {
+    flex: 1;
+  }

@@ -1,0 +1,14 @@
+.movieContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .movieImage {
+    max-width: 300px;
+    max-height: 450px;
+    margin-right: 20px;
+  }
+  
+  .movieInfo {
+    flex: 1;
+  }

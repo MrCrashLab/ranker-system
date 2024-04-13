@@ -138,20 +138,20 @@
 }
 
 .cardContainer {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 3 колонки */
-    grid-gap: 10px; /* Отступ между карточками */
-    margin-left: 54px;
-    margin-right: 54px;
-  }
-  
-  .card {
-    aspect-ratio: 2 / 3; /* Соотношение сторон 2:3 (вертикальный постер) */
-    object-fit: cover; /* Масштабирование изображения без искажений */
-    border-radius: 10px; /* Скругление углов карточки */
-    overflow: hidden; /* Обрезаем изображение, если оно не помещается */
-    border: 5px solid #f5f5f0;
-  }
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 3 колонки */
+  grid-gap: 10px; /* Отступ между карточками */
+  margin-left: 54px;
+  margin-right: 54px;
+}
+
+.card {
+  aspect-ratio: 2 / 3; /* Соотношение сторон 2:3 (вертикальный постер) */
+  object-fit: cover; /* Масштабирование изображения без искажений */
+  border-radius: 10px; /* Скругление углов карточки */
+  overflow: hidden; /* Обрезаем изображение, если оно не помещается */
+  border: 5px solid #f5f5f0;
+}
   
   .card img {
     width: 100%;

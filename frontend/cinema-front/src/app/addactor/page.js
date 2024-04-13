@@ -20,7 +20,7 @@ export default function AddActorPage() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    if (!name || !actors.length || !genre || !description || !imgPath) {
+    if (!name || !gender || !birthday || !description || !imgPath) {
       setError('Заполните все поля');
       return;
     } 
@@ -29,7 +29,7 @@ export default function AddActorPage() {
       {
         actor_id: 0,
         name: name,
-        birthday: birthday,
+        birthday: birthday.toISOString().slice(0, 10),
         gender: gender,
         description: description,
         img_path: imgPath
@@ -52,7 +52,7 @@ export default function AddActorPage() {
       }
     }
   };
-
+  console.log(birthday)
   return (
     <div className={styles.container}>
       <div className={styles.card}>
@@ -83,7 +83,9 @@ export default function AddActorPage() {
             <DatePicker
               selected={birthday}
               onChange={(date) => setBirthday(date)}
-              dateFormat="dd/MM/yyyy"
+              className={styles.inputClass}
+              dateFormat="dd.MM.yyyy"
+              utcOffset={0}
             />
           </div>  
           <div className={styles.formGroup}>
@@ -108,7 +110,7 @@ export default function AddActorPage() {
           </div>
           {error && <div className={styles.error}>{error}</div>}
           <div className={styles.buttonContainer}>
-            <button type="submit" className={styles.redBtn}>Добавить фильм</button>
+            <button type="submit" className={styles.redBtn}>Добавить актера</button>
           </div>
         </form>
       </div>

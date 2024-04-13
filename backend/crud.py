@@ -75,11 +75,12 @@ def create_cinema(db: Session, cinema: api_models.Cinema):
 
 
 def delete_cinema(db: Session, cinema_id: int):
-    db_cinema = db.query(sql_models.Actor).filter(sql_models.Cinema.cinema_id == cinema_id).first()
+    db_cinema = db.query(sql_models.Cinema).filter(sql_models.Cinema.cinema_id == cinema_id).first()
     if db_cinema:
         db.delete(db_cinema)
         db.commit()
         return db_cinema
+    return None
 
 
 def get_actors(db: Session, skip: int = 0, limit: int = 100):
@@ -151,7 +152,7 @@ def create_genre(db: Session, genre: api_models.Genre):
 
 
 def delete_genre(db: Session, genre_id: int):
-    db_genre = db.query(sql_models.Actor).filter(sql_models.Genre.genre_id == genre_id).first()
+    db_genre = db.query(sql_models.Genre).filter(sql_models.Genre.genre_id == genre_id).first()
     if db_genre:
         db.delete(db_genre)
         db.commit()

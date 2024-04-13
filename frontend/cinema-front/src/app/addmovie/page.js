@@ -136,6 +136,7 @@ export default function AddMoviePage() {
               components={animatedComponents}
               options={getActors.map(actor => ({ value: actor.actor_id, label: actor.name }))}
               value={actors.map(ac_v => ({value: ac_v.actor_id, label: ac_v.name}))}
+              className={styles.actorSelect}
               onChange={handleActorSelect}
             />
           </div>
